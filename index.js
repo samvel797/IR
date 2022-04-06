@@ -5,6 +5,8 @@ const mysql = require("mysql2");
 const { send } = require('process');
 const { dirname } = require('path');
 
+const PORT = process.env.PORT || 3000;
+
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -222,5 +224,5 @@ function getContentType(url) {
 }) */
 
 
-server.listen(3000, 'localhost');
+server.listen(PORT, 'localhost');
 console.log("мы отслеживаем порт 3000");
