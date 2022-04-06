@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesettings.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
+    <title>DEATH</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">DEATH</div>
+
+            <nav class="nav">
+                <a class="nav__link" href="http://localhost:3000/account.html">Me</a>
+                <a class="nav__link" href="http://localhost:3000/settings.html">Settings</a>
+                <a class="nav__link" href="http://localhost:3000/search.html">Search</a>
+                <a class="nav__link" href="#" onclick="logout()">Logout</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="ass">
+    <div class="container">
+        <div class="account_settings">
+            <div class="my_account_text">MY ACCOUNT</div>
+            <!-- <div class="error">Note: "name" and "surname" fields only support Latin characters !
+                fields cannot be empty!
+            </div> -->
+            <div class="name_setting">
+                <div class="name_label">name:</div>
+                <input class="name_input" type="text">
+            </div>
+
+            <div class="surname_setting">
+                <div class="surname_label">surname:</div>
+                <input class="surname_input" type="text">
+            </div>
+
+            <div class="gender_setting">
+                <div class="gender_label">gender:</div>
+                <div class="gender_label">male:</div>
+                <input class="gender_input" type="radio" name="genderRadioButton" value="rad1">
+                <div class="gender_label">female:</div>
+                <input class="gender_input" type="radio" name="genderRadioButton" value="rad2">
+            </div>
+
+            <div class="born_setting">
+                <div class="born_label">born:</div>
+                <input class="born_input" type="date">
+            </div>
+
+            <div class="die_setting">
+                <div class="die_label">die:</div>
+                <input class="die_input" type="date" disabled>
+                <div class="die_label">still alive:</div>
+                <input class="die_input" type="checkbox" checked = "yes">                 
+            </div>
+
+            <div class="photo_setting">
+                <div class="photo_label">photo:</div>
+                <input class="photo_input" type="file" accept=".jpg, jpeg, .png">
+            </div>
+
+            <div class="image">
+            </div>
+
+            <div class="about_setting">
+                <div class="about_label">about:</div>
+                <textarea class="about_input" cols="52" rows="10" maxlength="3499"> </textarea> 
+            </div>
+
+            
+
+            <button onclick="settingSave()" class="save_button">SAVE</button>
+            <button onclick="mySave()" class="image_button">image</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="settings.js"></script>
+
+</body>
+</html>

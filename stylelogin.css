@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*contaiter*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*Nav*/
+.nav {
+    font-size: 14;
+    text-transform: uppercase;
+
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2 linear;
+}
+
+.nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color: #fce38a;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+.nav__link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+/*intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}  
+
+body {
+    background: url("../ImagesS/intro5.jpg") center
+    no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.ass {
+   color: #fff;
+   margin-top: 200px;
+
+}
+
+.account {
+    
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.account_picture {
+    margin-right: 10px;
+}
+
+.fact {
+    font-size: 17px;
+    
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+    margin-right: 40px;
+    border: 2px solid #fce38a ;
+}
+
+
+.born {
+    font-size: 70px;
+    line-height: 0.8;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.die {
+    font-size: 70px;
+    line-height: 0.8;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.name {
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+.about_label {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
